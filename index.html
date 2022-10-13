@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cuide bem Do Seu PET</h1>
+    </header>
+    <form>
+        <fieldset>
+            <legend><b>Faça seu orçamento</b></legend>
+            <p>
+                <label for="txtNomeCompleto">Nome Completo</label><br>
+                <input type="text" name="NomeCompleto" id="txtNomeCompleto" placeholder="Nome Completo" required>
+            </p>
+            <p>
+                <label for="txtEmail">E-mail</label><br>
+                <input type="text" name="txtEmail" id="txtEmail" placeholder="Digite seu E-mail" required>
+            </p>
+            <p>
+                <label for="txtcConfirmacaoEmail">Confirmação do E-mail</label><br>
+                <input type="text" name="txtcConfirmacaoEmail" id="txtcConfirmacaoEmail"
+                    placeholder="Confirmação do E-mail" required>
+            </p>
+            <p>
+                <input type="text" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required placeholder="(99)99999-9999">
+            </p>
+            <fieldset>
+                <legend>Escolha seu PET</legend>
+
+                <input type="radio" name="pet" id="rdcachorro" value="dog">
+                <label for="rdcachorro">Cachorro</label><br>
+
+                <input type="radio" name="pet" id="rdcoelho" value="bunny">
+                <label for="rdcoelho">coelho</label><br>
+
+                <input type="radio" name="pet" id="rdgato" value="cat">
+                <label for="rdgato">gato</label><br>
+
+                <input type="radio" name="pet" id="rdpassaro" value="bird">
+                <label for="rdpassaro">Pássaro</label>
+            </fieldset>
+            <h4>Selecione serviço para PET</h4>
+            <p>
+                <label for="slcSevicos">Serviços</label><br>
+                <select name="servico" id="slcservico">
+                    <option value="TOS">Tosar</option>
+                    <option value="BANH">Banho</option>
+                    <option value="ESCO">Escovar</option>
+                    <option value="CORTU">Cortar Unha</option>
+                    <option value="SCPLT">Serviço Completo</option>
+                </select>
+            </p>
+            <p>
+                <label for="txtObservacao">Observações cuidados do PET</label><br>
+                <textarea name="Observacao" id="txtObservacao" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
